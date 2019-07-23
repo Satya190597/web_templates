@@ -1,0 +1,54 @@
+.flex-one
+{
+    flex: 1;
+}
+.flex-two
+{
+    flex: 2;
+}
+.flex-three
+{
+    flex: 3;
+}
+.flex-four
+{
+    flex: 4;
+}
+.flex-five
+{
+    flex: 5;
+}
+.flex-middle
+{
+    display: flex;
+    align-items: center;
+}
+.flex-align-middle
+{
+    justify-content: center
+}
+.middle > *
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+.font-arial
+{
+    font-family: Arial, Helvetica, sans-serif
+}
+.font-medium
+{
+    font-size: medium;
+}
+.font-large
+{
+    font-size: large;
+}
+.font-x-large
+{
+    font-size: x-large
+}
+.font-xx-large
+{
+    font-size: xx-large;
+}

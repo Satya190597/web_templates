@@ -1,0 +1,57 @@
+.main-header
+{
+    display: flex;
+    background-color: rgb(244, 218, 246);
+    color: rgb(100, 65, 165);
+}
+.navigation
+{
+    width: 100%;
+}
+.navigation ul
+{
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+.navigation-tabs
+{
+    display: inline-block;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    font-weight: bolder;
+}
+.logo-container
+{
+    padding: 3%;
+}
+.logo
+{
+    width: 20%;
+    height: 10%;
+}
+.heading
+{
+    font-weight: bolder;
+}
+.search-box
+{
+    border: 2px solid rgb(100, 65, 165);
+    background-color: rgba(100, 65, 165, 0.274);
+    display: flex;
+    width: 80%;
+    float: right;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+
+}
+.search-box:focus-within
+{
+    border: 2px solid rgb(122, 102, 160);
+}
+.search-box input
+{
+    width: 90%;
+    background: transparent;
+}
