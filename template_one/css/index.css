@@ -11,7 +11,7 @@
 .navigation ul
 {
     float: right;
-    width: 50%;
+    width: 100%;
     text-align: right;
 }
 .navigation-tabs
@@ -152,18 +152,19 @@
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(100, 65, 165);
 }
+/*
+----------- Footer -----------
+*/
 footer
 {
     display: flex;
     padding: 5%;
+    flex-direction: row;
     background-color: rgb(100, 65, 165);
 }
-.footer-contact-section
-{
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
+/*
+----------- Contact List -----------
+*/
 .contact-list
 {
     width: 100%;
@@ -180,9 +181,66 @@ footer
 {
     margin-bottom: 0;
 }
-.footer-address
+/*
+----------- Media Queries -----------
+*/
+@media screen and (max-width: 736px)
 {
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
+    .main-header
+    {
+        flex-direction: column;
+    }
+    .search-box
+    {
+        width: 40%;
+    }
+    .navigation ul
+    {
+        float: left;
+    }
+    .description-container
+    {
+        flex-direction: column;
+    }
+    .card-container
+    {
+        flex-direction: column;
+    }
+    .card
+    {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    footer
+    {
+        flex-direction: column;
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+    footer div
+    {
+        margin-bottom: 5%;
+    }
+    footer div:last-child
+    {
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
 }
+@media screen and (max-width: 540px)
+{
+    .navigation ul
+    {
+        width: 100%;
+        text-align: left;
+    }
+    .navigation-tabs
+    {
+        display: block;
 
+    }
+    .welcome-message
+    {
+        font-size: 30px;
+    }
+}
