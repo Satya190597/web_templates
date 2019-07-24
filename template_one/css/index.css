@@ -68,17 +68,25 @@
     align-items: center;
     font-weight: bold;
 }
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .card-container
 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 75%;
 }
 .card
 {
     background-color: rgb(251, 246, 252);
-    min-width: 20%;
-    max-width: 20%;
+    min-width: 30%;
+    max-width: 30%;
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 5%;
@@ -132,3 +140,49 @@
    background-color: rgba(100, 65, 165, 0.274);
    font-weight: bolder;
 }
+.description-container
+{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+}
+.description-container div
+{
+    padding: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(100, 65, 165);
+}
+footer
+{
+    display: flex;
+    padding: 5%;
+    background-color: rgb(100, 65, 165);
+}
+.footer-contact-section
+{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.contact-list
+{
+    width: 100%;
+}
+.contact-list li
+{
+    margin-bottom: 3%;
+}
+.contact-list li i
+{
+    margin-right: 2%;
+}
+.contact-list li:last-child
+{
+    margin-bottom: 0;
+}
+.footer-address
+{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
