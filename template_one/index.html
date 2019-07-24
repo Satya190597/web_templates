@@ -22,7 +22,8 @@
         </div>
         <div class="flex-four flex-middle">
             <nav class="navigation">
-                <ul>
+                <ul id="navmenu" class="navigation-display">
+                    <li class="navigation-tabs font-large responsive-menu" onClick="openNavBar()"><i class="fa fa-ellipsis-v" ></i></li>
                     <li class="navigation-tabs font-large">Home</li>
                     <li class="navigation-tabs font-large">Products</li>
                     <li class="navigation-tabs font-large">Company</li>
@@ -102,5 +103,16 @@
             </div>
         </div>
     </footer>
+    <script>
+        function openNavBar()
+        {
+            let navmenu = document.getElementById('navmenu')
+            if(navmenu.className === 'responsive')
+                navmenu.className = 'navigation-display'
+            else
+            navmenu.className = 'responsive'
+        }
+        
+    </script>
 </body>
 </html>

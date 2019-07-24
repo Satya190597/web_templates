@@ -182,6 +182,13 @@ footer
     margin-bottom: 0;
 }
 /*
+----------- Responsive Menu -----------
+*/
+.responsive-menu
+{
+    display: none;
+}
+/*
 ----------- Media Queries -----------
 */
 @media screen and (max-width: 736px)
@@ -205,11 +212,14 @@ footer
     .card-container
     {
         flex-direction: column;
+        width: 95%;
     }
     .card
     {
         min-width: 100%;
         max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
     footer
     {
@@ -242,5 +252,22 @@ footer
     .welcome-message
     {
         font-size: 30px;
+    }
+    /*
+    ----------------------------
+    */
+    .navigation-display > *
+    {
+        display: none;
+    }
+    .responsive > *
+    {
+        display: block;
+        margin-bottom: 2%;
+        cursor: pointer;
+    }
+    .responsive-menu
+    {
+        display: block;
     }
 }
