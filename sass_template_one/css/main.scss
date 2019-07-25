@@ -1,6 +1,7 @@
 $colors : (
     primary: #005DFf,
     primary-light: lighten(#005DFf,40%),
+    primary-dark: darken(#005DFf,40%),
     accent: #FFF6BB,
     light: #ffffff,
     dark: #000000
@@ -77,6 +78,39 @@ main
                     margin-top: 10px;
                 }
             }
+        }
+    }
+    #primary
+    {
+        color: color(light);
+        padding: $padding;
+        text-align: center;
+        h1 
+        {
+            font-size: 2em;
+            margin-top: 10px;
+            text-transform: uppercase;
+            font-family: $font;
+        }
+        p 
+        {
+            font-size: 1em;
+            font-family: $font;
+        }
+        a 
+        {
+            color: color(primary-dark);
+            border-radius: $border;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            background-color: color(accent);
+            display: block;
+            text-emphasis: center;
+            margin: 1em auto;
+            padding: $padding;
+            font-family: $font;
+            font-weight: bolder;
         }
     }
 }
