@@ -1,3 +1,10 @@
+/*
+    Variables declaration
+*/
+$font: Arial;
+$padding: 15px;
+$border: 15px;
+$desktop: 750px;
 $colors : (
     primary: #005DFf,
     primary-light: lighten(#005DFf,40%),
@@ -7,18 +14,17 @@ $colors : (
     dark: #000000
 );
 
-$font: Arial;
-
-$padding: 15px;
-$border: 15px;
-
+/* 
+    Helper function
+*/
 @function color($color-name)
 {
-    @return map-get($colors,$color-name)
+    @return map-get($colors,$color-name);
 }
 
-$desktop: 750px;
-
+/*
+    Mixin for media queries
+*/
 @mixin desktop {
     @media (min-width:#{$desktop})
     {
@@ -145,7 +151,6 @@ main
             text-align: center;
             background-color: color(accent);
             display: block;
-            text-emphasis: center;
             margin: 1em auto;
             padding: $padding;
             font-family: $font;
